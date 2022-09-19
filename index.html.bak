@@ -10,22 +10,15 @@
 	</head>
 	
 	<body>
+		var dataset = [ 5, 10, 15, 20, 25 ];
 		<script type="text/javascript">
+		<script src="https://d3js.org/d3.v7.min.js"></script>
 			d3.select("body")
 				.append("p")
 				.text("New paragraph!");
 			d3.csv("food.csv", function(data) {
 				console.log(data);
 			});
-			var rowConverter = function(d) {
-				return {
-					Food: d.Food, //No conversion
-					Deliciousness: parseFloat(d.Deliciousness)
-				};
-			}
-			d3.csv("food.csv", rowConverter, function(data) {
-				console.log(data);
-				});
 		</script>
 		<p>New paragraph!</p>
 	</body>
