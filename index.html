@@ -10,7 +10,11 @@
 	</head>
 	
 	<body>
+		var dataset = [ 5, 10, 15, 20, 25 ];
 		<script type="text/javascript">
+			d3.select("body")
+				.append("p")
+				.text("New paragraph!");
 			d3.csv("food.csv", function(data) {
 				console.log(data);
 			});
