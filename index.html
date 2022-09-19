@@ -11,12 +11,8 @@
 	
 	<body>
 		<div id="someContent">I am a blank page to be used as a template</div>
-        <d3.select("body") //References the D3 object
-            .append ("p")
-            .text("New paragraph!");
-            var body = d3.select("body");
-			var p = body.append("p");
-			p.text("New paragraph!");
+		d3.csv("food.csv", function(data) {console.log(data);
+		})
 		<script type="text/javascript">
 		</script>
 	</body>
