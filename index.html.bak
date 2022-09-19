@@ -10,7 +10,6 @@
 	</head>
 	
 	<body>
-		<div id="someContent">I am a blank page to be used as a template</div>
 		<script type="text/javascript">
 			d3.select("body").append("p").text("New paragraph!");
 		</script>
