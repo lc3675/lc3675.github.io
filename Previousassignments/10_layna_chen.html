@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Setting paragraphs' style conditionally, based on data</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+		<style>
+
+		</style>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+		
+            //here I have given you a different dataset, its an array(list) of the numbers 1 to 100 
+            var dataset = [];
+            for (var i = 1; i <= 100; i++) {
+               dataset.push(i);
+            }
+            // console.log(dataset)
+			
+            //YOUR ASSIGNMENT STARTS HERE: now you will make a function to change the color of the text
+            //if a number is divisible by 3, it is blue, 
+            //if it is divisible by 5 it is red, 
+            //if it is divisible by both, then it is green. 
+            //and if the number is not divisible by either, it will be black
+            
+            
+            //all this will stay the same
+
+			d3.select("body").selectAll("p")
+				.data(dataset)
+				.enter()
+				.append("p")
+				.text(function(d) {
+					return d;
+				})
+				.style("color", function(d) {
+					if(d%15==0){//divisiable by 15
+						return "green"
+                    }else if(d%5==0){ //divide 5
+                        return "red";
+                    }else if(d%3==0){
+                            return "blue";//divisiable by 3
+							}
+					
+                    //Funtions for D3: 
+					//==0 is it a prime number
+					//+ addition
+					//- subtraction
+					/// division
+					//% Returns the remainder left over after you've divided 
+					//the left number into a number of integer portions equal to the right number.
+					//* multiply
+					//** raises number to exponenent
+                                        
+				});
+			
+			
+		</script>
+	</body>
+</html>

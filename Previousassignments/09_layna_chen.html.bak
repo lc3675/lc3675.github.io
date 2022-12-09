@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Access data points from loaded file</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+		<style>
+
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+		
+			d3.csv("data/food.csv") 
+      .then(function(data) {
+
+  			d3.select("body").selectAll("p")
+  				.data(data)
+  				.enter()
+  				.append("p")
+  				.text(function(d) {
+            		console.log(d)
+  					return d.Food + " has the deliciousness of "+ d.Deliciousness
+  				})
+				.style("color",function(d){
+					if(d.Deliciousness>5){
+						return "red"
+					}else{
+						return "black"
+					}
+				})			
+				
+      })
+	  
+      .catch(function(error){
+      })
+
+			
+		</script>
+	</body>
+</html>

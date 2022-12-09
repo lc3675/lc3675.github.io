@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Setting paragraphs' style conditionally, based on data</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+		<style>
+
+		</style>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+		
+            //here I have given you a different dataset, its an array(list) of the numbers 1 to 100 
+            var scale = d3.scaleLinear();
+				scale.domain([100.500]);
+				scale.range([10,350]);
+			var dataset = [
+						[5, 20], [480, 90], [250, 50], [100, 33], [330, 95],
+						[410, 12], [475, 44], [25, 67], [85, 21], [220, 88]
+						];
+            // console.log(dataset)
+
+			d3.select("body").selectAll("p")
+				.data(dataset)
+				.enter()
+				.append("p")
+				.text(function(d) {
+					return d;
+				})
+				.style("color", function(d) {
+					if(d%15==0){//divisiable by 15
+						return "green"
+                    }else if(d%5==0){ //divide 5
+                        return "red";
+                    }else if(d%3==0){
+                            return "blue";//divisiable by 3
+							}
+					
+                    //Funtions for D3: 
+					//==0 is it a prime number
+					//+ addition
+					//- subtraction
+					/// division
+					//% Returns the remainder left over after you've divided 
+					//the left number into a number of integer portions equal to the right number.
+					//* multiply
+					//** raises number to exponenent
+                                        
+				});
+			
+			
+		</script>
+	</body>
+</html>

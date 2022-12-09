@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<!--Styles for Paragraph Text -->
+	<style type="text/css">
+		@font-face {
+			font-family: 'Roboto Bold';
+			src: url(RobotoMono-Bold.ttf);
+		}
+
+		@font-face {
+			font-family: 'Roboto Light';
+			src: url(RobotoMono-Medium.ttf);
+		}
+
+		h1 {
+			font-size: 42px;
+			font-family: 'Roboto Bold';
+			text-align: center;
+			padding-inline: 40 px;
+		}
+
+		h2 {
+			font-size: 30px;
+			font-family: 'Roboto Bold';
+			text-align: left;
+			padding-left: 15px;
+			padding-inline: 25 px;
+		}
+
+		h3 {
+			color: #000000;
+			/*text-align: center;*/
+			font-size: 24px;
+			font-family: 'Roboto Bold';
+			padding: 1 px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 135%;
+			font-family: 'Roboto Light';
+			padding-left: 30px;
+			padding-right: 10px;
+			margin top: auto;
+			margin bottom: auto;
+			text-align: left;
+			text-justify: inter-word;
+		}
+
+		.vertical-center {
+			margin: 0;
+			position: relative;
+			/*top: 50%;*/
+			/*-ms-transform: translateY(-50%);*/
+			/*transform:translateY(-50%);*/
+		}
+
+		.left-half {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			left: 0px;
+			width: 300px;
+			/*height: 100%;*/
+		}
+
+		.right-half {
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+			right: 0px;
+			left: 10px;
+			width: 1000px;
+			/*height: 100%;*/
+		}
+
+		.text {
+			font-family: 'Roboto Light';
+		}
+
+
+		.link {
+			fill: none;
+			stroke: #ccc;
+			stroke-width: 2px;
+		}
+
+		.noteText {
+			font-size: 9px;
+			font-family: 'Roboto Light';
+		}
+
+
+		.perfumeText {
+			font-size: 10px;
+			font-family: 'Roboto Light';
+		}
+
+
+		div.container1 {
+			/*height: 400px;*/
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 1400px;
+			/*position: absolute;*/
+		}
+
+		div.container2 {
+			/*height: 1080px;*/
+			/*width: 1080px;*/
+			/*position: absolute;*/
+		}
+
+		div.container3 {
+			/*height: 1080px;*/
+			/*width: 1080px;*/
+			/*position: absolute;*/
+		}
+
+		div.container4 {
+			/*height: 1080px;*/
+			/*width: 1080px;*/
+			/*position: absolute;*/
+		}
+
+		.outer {
+			background-color: White;
+		}
+
+		.pie {
+			width: 300px;
+			height: 300px;
+			display: inline-block;
+			vertical-align: top;
+			background-color: White;
+		}
+	</style>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script type="text/javascript" src="../d3.js"></script>
+
+
+</head>
+
+<!--Opening Text -->
+
+<body>
+	<img src="Header.png" alt="Header">
+	<div class="container1">
+
+		<br>
+		<div class="vertical-center" style="width:1000px; text-align:center; margin: 0 auto;">
+			<h1>Gendered Fragrances</h1>
+			<p style="padding-left:200px, padding-right:200px; text-align:center";>
+				Clear gender roles in fragrance are not biologically predetermined
+				but culturally constructed.
+				Although we may recognize floral scents as feminine and musky smells
+				as masculine, these assignations are based on recent marketing. 
+				In Ancient Rome, floral scents were associated with men, with 
+				Alexander the Great's teacher, "Theophrastus", recommending, that 
+				"rose-perfume and kypros[...] seem to be the best suited to men, as also lily-perfume."
+				<br><br>
+
+				Although fragrances often sink to our subconscious, they are a subtle enforcement
+				of social norms between men and women. The arbitrary associations in popular 
+				fragrances in today's market stemmed from the rise in gendered stereotypes in the late 19th century. They are a part of existing social norms that dictate that men and women 
+				should act, look, and smell a certain way.
+				<br><br>
+			
+			</p>
+			<br>
+			</p>
+		</div>
+		<br>
+
+		<div class="container2">
+			<div class="left-half">
+				<div style="left:20px">
+					<h2 style="padding-left:30px">Categorizing Notes</h2>
+
+					<p style="padding-right: 15px, width: 100%">
+						Notes within fragrances are different scent layers that make it unique. They are categorized in three parts. 
+					</p>
+					<h3 style="padding-left:30px">Head</h3>
+					<p>
+						"Head" notes appear within <b>15 minutes</b>. 
+					</p>
+					<br>
+					<h3 style="padding-left:30px">Heart</h3>
+					<p>
+						"Heart" notes appear after <b>3-4 hours</b>. </p>
+					<br>
+					<h3 style="padding-left:30px">Body</h3>
+					<p>
+						"Body" notes appear after <b>5 to 8 hours</b> and
+						linger the longest. </p>
+				</div>
+			</div>
+			<div class="right-half" style="text-align:center;">
+				<h3>Note Organizations</h3>
+				<img src="notetypes.png" alt="LinkBroken" width="750">
+			</div>
+		</div>
+
+		<br><br><br><br>
+
+		<div class="container2">
+			<div class="left-half">
+				<h2 style="padding-left:30px">Popular Perfumes</h2>
+				<p style="padding-left:15px, padding-right: 15px, width: 100%">
+					We surveyed the 20 best-selling perfumes for both men and women.
+					<br><br>
+					Source: Ulta Beauty
+				</p>
+			</div>
+			<div class="right-half" style="text-align:center;">
+				<img src="fragrances.png" alt="LinkBroken">
+			</div>
+		</div>
+
+		<br><br>
+
+		<!--First Graph -->
+		<br>
+		<div class="container2">
+			<div class="left-half">
+				<div style="left:20px">
+					<h2>Gendered Notes</h2>
+					<p style="padding-left:15px;padding-right:15px;padding-bottom:15px">
+						Notes within the 20 most popular perfumes for both men and 
+						women were mapped.
+						<br><br>
+						<img src="linegraphexplanation.png" alt="cleaning" width="300">
+					
+					</p>
+				</div>
+			</div>
+			<div class="right-half">
+				<div style="text-align:center">
+					<div style="top:20px">
+						<h3>Top Perfume Notes</h3>
+						<div id="linechart" class="linechart" style="padding-left:70px";>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br><br><br>
+		<!--Start Second Graph -->
+		<br>
+		<div class="container2">
+			<table>
+				<tr>
+					<td style="vertical-align:top">
+						<div class="left-half">
+								<h2>Gendered Notes</h2>
+								<p style="padding-left:15px;padding-right:15px;padding-bottom:15px">
+									Which notes appear most frequently in male vs female scents? 
+									We added all the occurrences of notes in all surveyed perfumes. 
+									In women perfumes, floral notes ring high. With men, woody notes are dominant.
+									<br>
+									<br>
+									<br>
+									<img src="Legend.png" alt="cleaning" width="150">
+								</p>
+							</div>
+						</div>
+					</td>
+					<div class="right-half">
+						<td style="padding-left:150px">
+							<div style="left: 170px">
+							<div id="female_barchart" >
+								<h3 style="margin-left:80px;">Female Notes</h3>
+							</div>
+						</td>
+						<td>
+							<div id="male_barchart" style="padding-left:50px">
+								<h3 style="margin-left:100px">Male Notes</h3>
+							</div>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<br><br><br>
+
+		<!--Start Third Graph-->
+		<br>
+		<div class="container3">
+			<div class="left-half">
+				<h2>Gendered Cleaning</h2>
+				<p style="padding-left:15px;padding-right:15px;padding-bottom:15px">
+					Do fragrances condition women to clean more than men?
+					To test this theory, we surveyed the 20 name brand cleaning products.
+					The most popular notes in cleaning products are "citrus" and "floral" scents,
+					popular notes for both men and women. However,
+					"wooded" scents, a defining male scent, was rarely seen. 
+				<br><br><br>
+				<img src="cleaningProducts.png" alt="cleaning" width="300">
+				</p>
+
+			</div>
+			<div class="right-half">
+				<div class="outer">
+					<div class="pie" id="female_piechart">
+						<h3 style = "text-align: center; padding-left:25px";>Female</h3>
+					</div>
+					<div class="pie" id="male_piechart">
+						<h3 style = "text-align:center; padding-left:45px";>Male</h3>
+					</div>
+					<div class="pie" id="cleaning_piechart">
+						<h3 style = "text-align:center; padding-left:65px,";>Cleaning</h3>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<img src="footer.png" alt="Footer">
+
+
+
+	<script type="text/javascript">
+		(function () {//draw "female_barchart", "male_barchart"
+			var textsize = ["9"];
+			var font = ["Roboto Light"];
+			var fill = ["black"];
+
+			var noteTypeColors = {
+				"Citrus": "rgb(247,218,51)",
+				"Green": "rgb(75,183,73)",
+				"Floral": "rgb(237,151,192)",
+				"Fruity": "rgb(205,26,110)",
+				"Balsamic": "rgb(135,99,171)",
+				"Wooded": "rgb(183,123,105)",
+				"Gourmand": "rgb(209,162,42)",
+				"Spices": "rgb(240,81,72)",
+			};
+			// set the dimensions and margins of the graph
+			var margin = { top: 0, right: 30, bottom: 40, left: 90 },
+				width = 380 - margin.left - margin.right,
+				height = 820 - margin.top - margin.bottom;
+
+			// append the svg object to the body of the page
+			d3.csv("Perfume Notes - Gendered Notes.csv")
+				.then(function (data) {
+					console.log("data:"); console.log(data);
+
+					var svg = d3.select("#female_barchart")
+						.append("svg")
+						.attr("width", width + margin.left + margin.right)
+						.attr("height", height + margin.top + margin.bottom)
+						.append("g")
+						.attr("transform",
+							"translate(" + margin.left + "," + margin.top + ")");
+
+					var x = d3.scaleLinear()
+						.domain([0, 15])
+						.range([0, width]);
+					svg.append("g")
+						.attr("transform", "translate(0," + height + ")")
+						.call(d3.axisBottom(x))
+						.selectAll("text")
+						.style("text-anchor", "end")
+						.style("font-size", textsize)
+						.attr("font-family", font)
+						.attr("fill", fill);
+
+					// Y axis
+					var y = yscale(data);
+					function yscale(dataInput) {
+						return d3.scaleBand()
+							.range([0, height])
+							.domain(dataInput.map(function (d) { return d.Notes; }))
+							.padding(.1);
+					}
+
+					var yaxisG = svg.append("g")
+						.style("text-anchor", "end")
+						.style("font-size", textsize)
+						.attr("font-family", font)
+						.attr("fill", fill);
+
+					yaxisG.call(d3.axisLeft(y))
+						.on("click", null);
+
+					//Creating Initial Bars
+					svg.selectAll("myRect")
+						.data(data)
+						.enter()
+						.append("rect")
+						.attr("x", x(0))
+						.attr("y", function (d) { return y(d.Notes); })
+						.attr("width", function (d) { return x(d.Women); })
+						.attr("height", y.bandwidth())
+						.attr("fill", function (d) {
+							//console.log(noteTypeColors)
+							var color = noteTypeColors[d.Type]
+							//console.log(color)
+							if (color == undefined) {
+								color = "rgb(237,151,192)"
+							}
+							return color
+						});
+
+					var svg = d3.select("#male_barchart")
+						.append("svg")
+						.attr("width", width + margin.left + margin.right)
+						.attr("height", height + margin.top + margin.bottom)
+						.append("g")
+						.attr("transform",
+							"translate(" + margin.left + "," + margin.top + ")");
+
+					var x = d3.scaleLinear()
+						.domain([0, 15])
+						.range([0, width]);
+					svg.append("g")
+						.attr("transform", "translate(0," + height + ")")
+						.call(d3.axisBottom(x))
+						.selectAll("text")
+						.style("text-anchor", "end")
+						.style("font-size", textsize)
+						.attr("font-family", font)
+						.attr("fill", fill);
+
+					// Y axis
+					var y = yscale(data);
+					function yscale(dataInput) {
+						return d3.scaleBand()
+							.range([0, height])
+							.domain(dataInput.map(function (d) { return d.Notes; }))
+							.padding(.1);
+					}
+
+					var yaxisG = svg.append("g")
+						.style("text-anchor", "end")
+						.style("font-size", textsize)
+						.attr("font-family", font)
+						.attr("fill", fill);
+
+					yaxisG.call(d3.axisLeft(y))
+						.on("click", null);
+
+					//Creating Initial Bars
+					svg.selectAll("myRect")
+						.data(data)
+						.enter()
+						.append("rect")
+						.attr("x", x(0))
+						.attr("y", function (d) { return y(d.Notes); })
+						.attr("width", function (d) { return x(d.Men); })
+						.attr("height", y.bandwidth())
+						.attr("fill", function (d) {
+							//console.log(noteTypeColors)
+							var color = noteTypeColors[d.Type]
+							//console.log(color)
+							if (color == undefined) {
+								color = "rgb(237,151,192)"
+							}
+							return color
+						});
+				});
+		})();//end draw "female_barchart", "male_barchart"
+
+
+
+
+
+
+
+		(function () { //draw "female_piechart", "male_piechart", "cleaning_piechart"
+			var widthPieChart = 400,  marginPieChart = 60;
+
+			var r =80, margin = 100, size =(r + margin) * 2;
+			var colorrange = ["rgb(247,218,51)",
+				"rgb(237,151,192)",
+				"rgb(75,183,73)",
+				"rgb(2015,26,110)",
+				"rgb(240,81,72)",
+				"rgb(183,123,105)",
+				"rgb(135,99,171)",
+				"rgb(209,162,42)"];
+
+			var textsize = ["10"];
+			var font = ["Roboto Light"];
+			var fill = ["black"];
+
+
+			// append the svg object to the div called 'my_dataviz'
+			var svg3 = d3.select("#female_piechart")
+				.append("svg")
+				.attr("width", size)
+				.attr("height", size)
+				.append("g")
+				.attr("transform", "translate(" + (r + margin) + "," + (r + margin) + ")");
+
+			// Create dummy data
+			var femaledata = { Citrus: 6, Floral: 45, Green: 2, Fruity: 8, Spices: 0, Wooded: 11, Balsamic: 11, Gourmand: 15 };
+
+			// set the color scale
+			var color = d3.scaleOrdinal()
+				.domain(femaledata)
+				.range(colorrange);
+			//console.log(color);
+
+			// Compute the position of each group on the pie:
+			var pie = d3.pie()
+				.value(function (d) { return d.value; })
+			var data_ready = pie(d3.entries(femaledata))
+			//console.log(data_ready)
+			//Now I know that group A goes from 0 degrees to x degrees and so on.
+
+			// shape helper to build arcs:
+			var arcGenerator = d3.arc()
+				.innerRadius(0)
+				.outerRadius(r)
+
+			var outerArc = d3.arc()
+				.innerRadius(r * 0.9)
+				.outerRadius(r * 0.9)
+
+			// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+			svg3
+				.selectAll('mySlices')
+				.data(data_ready)
+				.enter()
+				.append('path')
+				.attr('d', arcGenerator)
+				.attr('fill', function (d) { return (color(d.data.key)) })
+				.attr("stroke", "white")
+				.style("stroke-width", ".5px")
+				.style("opacity", 0.8)
+
+
+			// Now add the annotation. Use the centroid method to get the best coordinates
+			svg3
+				.selectAll('mySlices')
+				.data(data_ready)
+				.enter()
+				.append('text')
+				.text(function (d) { return d.data.value > 0 ? d.data.key : "" })
+				.attr("transform", function (d) {
+					var c = arcGenerator.centroid(d);
+					var x = 2.8, y = 2.2;
+					if (d.data.key == "Citrus" || d.data.key == "Green") {
+						x = 2.3; //1.8
+						y = 2.4; //1.2
+					}
+					if (d.data.key == "Citrus") {
+						x = 3.0; //1.8
+						y = 2.3; //1.2
+					}
+					if (d.data.key == "Gourmand") {
+						x = 2.8; //1.8
+						y = 2.6; //1.2
+					}
+					if (d.data.key == "Floral") {
+						x = 2.6; //1.8
+						y = 1; //1.2
+					}
+					return "translate(" + c[0] * x + "," + c[1] * y + ")";
+				})
+				.style("text-anchor", "middle")
+				.style("font-size", textsize)
+				.attr("font-family", font)
+				.attr("fill", fill);
+
+
+			var svg3 = d3.select("#male_piechart")
+				.append("svg")
+				.attr("width", size)
+				.attr("height", size)
+				.append("g")
+				.attr("transform", "translate(" +  (r + margin) + "," +  (r + margin) + ")");
+
+			// Create dummy data
+			var maledata = { Citrus: 20, Floral: 23, Green: 13, Fruity: 5, Spices: 11, Wooded: 25, Balsamic: 11, Gourmand: 7 };
+
+			// set the color scale
+			var color = d3.scaleOrdinal()
+				.domain(maledata)
+				.range(colorrange);
+			//console.log(color)
+
+			// Compute the position of each group on the pie:
+			var pie = d3.pie()
+				.value(function (d) { return d.value; })
+			var data_ready = pie(d3.entries(maledata))
+			//console.log(data_ready)
+			//Now I know that group A goes from 0 degrees to x degrees and so on.
+
+			// shape helper to build arcs:
+			var arcGenerator = d3.arc()
+				.innerRadius(0)
+				.outerRadius(r);
+
+			var outerArc = d3.arc()
+				.innerRadius(r * 0.9)
+				.outerRadius(r * 0.9);
+
+			// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+			svg3
+				.selectAll('mySlices')
+				.data(data_ready)
+				.enter()
+				.append('path')
+				.attr('d', arcGenerator)
+				.attr('fill', function (d) { return (color(d.data.key)) })
+				.attr("stroke", "white")
+				.style("stroke-width", ".5px")
+				.style("opacity", 0.8);
+
+			// Now add the annotation. Use the centroid method to get the best coordinates
+			svg3
+				.selectAll('mySlices')
+				.data(data_ready)
+				.enter()
+				.append('text')
+				.text(function (d) { return d.data.key })
+				.attr("transform", function (d) {
+					var c = arcGenerator.centroid(d);
+					var x = 2.8, y = 2.2;
+					if (d.data.key == "Citrus") {
+						x = 3.0; //1.8
+						y = 2.4; //1.2
+					}
+					if (d.data.key == "Fruity") {
+						x = 3.0; //1.8
+						y = 2.3; //1.2
+					}
+					return "translate(" + c[0] * x + "," + c[1] * y + ")";
+				})
+				.style("text-anchor", "middle")
+				.style("font-size", textsize)
+				.attr("font-family", font)
+				.attr("fill", fill);
+
+			var svg3 = d3.select("#cleaning_piechart")
+				.append("svg")
+				.attr("width", size)
+				.attr("height", size)
+				.append("g")
+				.attr("transform", "translate(" +  (r + margin) + "," +  (r + margin) + ")");
+
+			// Create dummy data
+			var cleandata = { Citrus: 27, Floral: 28, Green: 3, Fruity: 24, Spices: 1, Wooded: 1, Balsamic: 2, Gourmand: 5 };
+
+			// set the color scale
+			var color = d3.scaleOrdinal()
+				.domain(cleandata)
+				.range(colorrange);
+			//console.log(color)
+
+			// Compute the position of each group on the pie:
+			var pie = d3.pie()
+				.value(function (d) { return d.value; });
+			var data_ready = pie(d3.entries(cleandata));
+			//console.log(data_ready)
+			//Now I know that group A goes from 0 degrees to x degrees and so on.
+
+			// shape helper to build arcs:
+			// The arc generator
+			var arc = d3.arc()
+				.innerRadius(0)         // This is the size of the donut hole
+				.outerRadius(r);
+
+			var outerArc = d3.arc()
+				.innerRadius(r * 0.9)
+				.outerRadius(r * 0.9);
+
+			// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+			svg3
+				.selectAll('mySlices')
+				.data(data_ready)
+				.enter()
+				.append('path')
+				.attr('d', arcGenerator)
+				.attr('fill', function (d) { return (color(d.data.key)) })
+				.attr("stroke", "white")
+				.style("stroke-width", ".5px")
+				.style("opacity", 0.8);
+
+
+			// Now add the annotation. Use the centroid method to get the best coordinates
+			svg3
+				.selectAll('mySlices')
+				.data(data_ready)
+				.enter()
+				.append('text')
+				.text(function (d) { return d.data.key })
+				.attr("transform", function (d) {
+					var c = arcGenerator.centroid(d);
+					var x = 2.8, y = 2.2;
+					if (d.data.key == "Wooded") {
+						x = -15.1; //1.8
+						y = 2.15; //1.2
+					}
+					if (d.data.key == "Citrus") {
+						x = 3.0; //1.8
+						y = 2.3; //1.2
+					}
+					if (d.data.key == "Green") {
+						x = 4.1; //1.8
+						y = 2.05; //1.2
+					}
+					if (d.data.key == "Balsamic") {
+						x = 4.6; //1.8
+						y = 2.2; //1.2
+					}
+					if (d.data.key == "Gourmand") {
+						x = 3.6; //1.8
+						y = 1.8; //1.2
+					}
+					if (d.data.key == "Spices") {
+						x = 2.4; //1.8
+						y = 2.4; //1.2
+					}
+					return "translate(" + c[0] * x + "," + c[1] * y + ")";
+				})
+				.style("text-anchor", "middle")
+				.style("font-size", textsize)
+				.attr("font-family", font)
+				.attr("fill", fill);
+
+		})(); //end draw "female_piechart", "male_piechart", "cleaning_piechart"
+
+
+		(function () { //draw "linechart"
+			//NEW: adding that note type dataset here - I added a header in the csv itself as well, it still needs some cleaning up - quotation marks etc.
+			//NEW: Need to name the colors for each type - some fake ones here:
+			//TODO: determind what colors you want to use in each type and fill them in
+
+	
+		//NEW: adding that note type dataset here - I added a header in the csv itself as well, it still needs some cleaning up - quotation marks etc.
+		Promise.all([d3.csv("PerfumeNotes_ACCleaned.csv"),d3.csv("Perfume Notes - NoteTypes.csv")])
+
+			.then(function(data){
+				
+				//NEW: organize note type into a  dictionary - see the function declaration
+				//pass in data[1] which is the 2nd csv we imported above			
+				var noteTypeDictionary = makeNoteTypeDictionary(data[1])
+				//console.log(noteTypeDictionary)
+				
+				
+				//this is where we are calling the function and putting the data into nodes
+				var links = processDataLinks(data[0])
+				var Perfumes = processDataPerfumeNodes(data[0])
+				var NoteNodes = processDataNoteNodes(data[0])
+				
+				//NEW: pass in all 3 datasets so that we can draw them, and then we will also pass in our new color info
+				drawlines(links, Perfumes, NoteNodes, noteTypeDictionary)
+
+				
+			})
+		})();
+
+
+		function makeNoteTypeDictionary(dataset){
+			//NEW: here is the dictionary we will put the note to notetype info
+			var formatted = {}
+			console.log(dataset)
+			for(var i in dataset){
+				if(dataset[i].noteType !=undefined){
+					var noteType = dataset[i].noteType
+					var notes = dataset[i].notes.replace("[","").replace("]","").split(",")
+					console.log(noteType,notes)
+					//NEW: once again we will loop through and make key value pairs
+					for(n in notes){
+						var note = notes[n]
+						console.log(note)
+						//NEW: make a match between note and notetype
+						formatted[note]=noteType
+					}	
+					
+				}
+							
+			}
+			console.log(formatted)
+			return formatted
+		}
+
+		//this function, which is called above with the csv, makes nodes between each perfume and note
+
+		function processDataLinks(dataset){
+
+			//console.log(dataset)
+			var links = []
+			for(var i in dataset){
+
+				//console.log(i)
+				var perfume = dataset[i]["Perfume Name"] 
+				//console.log(perfume);
+				//return perfume
+
+		if(perfume!=undefined){ 
+					var notes = dataset[i]["Notes"].replace("[","").replace("]","").split(", ")
+					for(var n in notes){
+						// console.log(notes[n])
+						var note = notes[n]
+						var link = [perfume,note]
+						links.push(link)
+					}
+				} 		
+			}
+		//	console.log(links);
+			return links
+		}
+		
+
+		//here you can make a similar loop to make a list of perfumes
+	function processDataPerfumeNodes(dataset){
+			perfumes = []
+			for (var i in dataset){
+					var perfumename = dataset[i]["Perfume Name"]
+				if(perfumename!=undefined){
+					perfumes.push(perfumename)
+				}
+			}
+					console.log(perfumes)
+					return perfumes
+	}
+
+		//here you can make another for a list of notes
+		//List of perfume nodes
+		function processDataNoteNodes(dataset){
+				notenodes = []
+				indnotes = []
+				for(var i in dataset){
+					if(dataset[i]["Notes"]!=undefined){
+						var notes = dataset[i]["Notes"].replace("[","").replace("]","").split(", ")
+						for (var n in notes) {
+						var note = notes[n]
+						if (notenodes.indexOf(note)==-1)
+							{
+							notenodes.push(notes[n])
+							}
+						}
+					}
+				}
+				//NEW: this return statements needs to be outside of the loops so that you return the whole array, not the first only
+				console.log(notenodes)		
+				return notenodes
+		}
+				
+
+
+//var notenumber = 
+		
+var noteTypeColors = {
+				"Citrus": "rgb(247,218,51)",
+				"Green": "rgb(75,183,73)",
+				"Floral": "rgb(237,151,192)",
+				"Fruity": "rgb(205,26,110)",
+				"Balsamic": "rgb(135,99,171)",
+				"Wooded": "rgb(183,123,105)",
+				"Gourmand": "rgb(209,162,42)",
+				"Spices": "rgb(240,81,72)",
+			}
+				
+	function drawlines(linksDataset, perfumesDataset, notesDataset, typeDictionary){
+		//console.log(linksDataset,perfumesDataset,notesDataset)
+			//NEW I took out a portion which is drawing a test line before
+			
+		
+			var w = 950;
+			var h = 900;
+			var padding = 20;
+			var svg = d3.select("#linechart")
+				.append("svg")
+				.attr("width",w)
+				.attr("height",h);
+			
+			 var margin = {
+				top: 15,
+				right: 25,
+				bottom: 15,
+				left: 60
+				};
+				
+			for (var d in linksDataset){
+			
+				//NEW here we want to chante the y from simply d to where the nodes will be
+				//we use the index of the link source in perfumes array to set x1, and same for the link target in notes for x2
+				
+				//here is the name of the perfume
+				var linkSource = linksDataset[d][0]
+				//here is the order number of that perfume in the perfumes array
+				var sourceIndex = perfumesDataset.indexOf(linkSource)
+				
+				//same with the notes here below
+				var linkTarget = linksDataset[d][1]
+				var targetIndex   = notesDataset.indexOf(linkTarget)
+				
+				//console.log(sourceIndex,linkSource,targetIndex, linkTarget)
+				
+				//NEW: adding a scale here to space out the y values
+				var noteyScale = d3.scaleLinear().domain([0,67]).range([0,850])
+				var perfumeyScale = d3.scaleLinear().domain([0,40]).range([0,850])
+				
+				svg.append('line')
+					.style("stroke", "lightgreen")
+					.style("stroke-width", 1)
+					.attr("x1", 300)
+					//let's set y1 to the index of the perfume
+					.attr("y1", perfumeyScale(sourceIndex)+padding)
+					.attr("x2", 600)
+					//and set y2 to index of notes
+					.attr("y2", noteyScale(targetIndex)+padding) 
+					//NEW: lets test the colors here
+					.style("stroke", function(){
+						
+						//NEW: our note is linkTarget
+						//so our note type is 
+						var noteType = typeDictionary[linkTarget]
+						//console.log(noteType)
+						//and our color using the color dictionary is:
+					
+						var color = noteTypeColors[noteType]
+						//Temporary if statement here because the color dictionary doesn't have every note type yet.
+						//so if the color is undefined in the dictionary, it will be grey
+						if(color ==undefined){
+							color ="grey"
+						}
+						//console.log(color)
+						return color
+					})
+					
+			}			
+			
+			
+			
+			//NEW: you can actually draw the nodes directly here in the same function, or separate it out.
+			svg.selectAll(".perfumeCircles")
+			.data(perfumesDataset)
+			.enter()
+			.append("circle")
+			.attr("class","perfumeCircles")
+			.attr("r",1.5)
+			.attr("cx",300)
+			.attr("cy",function(d,i){
+				return perfumeyScale(i) +padding
+			})
+			
+			svg.selectAll(".perfumeText")
+				.data(perfumesDataset)
+				.enter()
+				.append("text")
+				.attr("class","perfumeText")
+				.attr("x",296)
+				.attr("y",function(d,i){
+					return perfumeyScale(i)+padding
+				})
+				.attr("text-anchor","end")
+				.attr("alignment-baseline","middle")
+				.attr("font-family", "Roboto Light")
+				.attr("font-size", 10)
+				.text(function(d){
+					return d
+				})
+			
+			svg.selectAll(".noteCircles")
+				.data(notesDataset)
+				.enter()
+				.append("circle")
+				.attr("class","noteCircles")
+				.attr("r",1.5)
+				.attr("cx",600)
+				.attr("cy",function(d,i){
+					return noteyScale(i)+padding
+					})
+					
+			svg.selectAll(".noteText")
+				.data(notesDataset)
+				.enter()
+				.append("text")
+				.attr("class","noteText")
+				.attr("x",603)
+				.attr("y",function(d,i){
+					return noteyScale(i)+padding
+				})
+				.attr("font-size",10)
+				.attr("alignment-baseline","middle")
+				.attr("font-family", "Roboto Light")
+				.attr("text-anchor", "start")
+				.attr("y",function(d,i){
+					return noteyScale(i)+padding
+				})
+				.text(function(d){
+					return d
+				})
+
+
+			//TITLE GOES HERE
+			svg.append("text")
+				.attr("x", w / 2)
+				.attr("y", padding - 40)
+				.attr("text-anchor", "middle")
+				.attr("font-family", "Roboto Bold")
+				.style("font-size", "24px")
+				.text("Notes in Top-Selling Fragrances");
+
+			//TODO you can draw a circle and label for each of the nodes to the right in a similar way as perfumes.done
+			//the difference ehre would be that that text-anchor attribute has to be set to the start, so the text is aligned differently
+			//there is also some other alignment issues here, text is written from bottom up, so it is always higher than the shapes, so adding some pixels will help. 
+			//the entire chart may need to be moved to get the text and graphics to fit. 
+			//the colors were demonstrated in the links drawing above, use the same steps from there to set colors for nodes.
+		
+		
+		}; //end drawDoubleLines()
+
+	</script>
+
+</body>
+
+</html>
